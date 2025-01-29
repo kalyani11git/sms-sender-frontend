@@ -13,7 +13,7 @@ const SendMessage = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/send-message', {
+      const res = await axios.post('https://message-sender-backend.onrender.com/send-message', {
         mobileNumber,
         message,
       });
